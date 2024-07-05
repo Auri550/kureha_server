@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>紅葉の雑談サーバー</title>
+  <title>Discord ウィジェット</title>
 </head>
 <body>
   <div class="discord-widget-container">
@@ -11,14 +11,11 @@
 
   <style>
     .discord-widget-container {
-      display: flex; /* コンテナをフレックスコンテナにする */
-      justify-content: right; /* アイテムを右寄せにする */
-      align-items: center; /* アイテムを垂直方向に中央揃えにする */
+      position: absolute; /* ウィジェットを絶対配置にする */
+      right: 0; /* ウィジェットを右端に配置する */
+      top: 50%; /* ウィジェットを垂直方向に中央揃えにする */
+      transform: translateY(-50%); /* ウィジェットを垂直方向に中央揃えにする */
       width: fit-content; /* コンテンツに合わせて幅を調整する */
-    }
-
-    .discord-widget-container.left {
-      justify-content: flex-start; /* アイテムを左寄せにする */
     }
   </style>
 </body>
