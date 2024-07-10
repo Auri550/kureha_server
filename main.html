@@ -9,19 +9,35 @@
             font-family: Arial, sans-serif;
             background-color: #282c34;
             color: #61dafb;
-            text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            height: 100vh;
         }
         header {
             background-color: #20232a;
             padding: 20px;
-        }
-        header h1 {
-            margin: 0;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
         }
         main {
+            display: flex;
+            flex: 1;
             padding: 20px;
+            box-sizing: border-box;
+        }
+        .left {
+            flex: 1;
+            padding: 20px;
+            background-color: #20232a;
+            border-right: 1px solid #61dafb;
+            box-sizing: border-box;
+        }
+        .right {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .invite-button {
             background-color: #7289da;
@@ -42,8 +58,15 @@
         <h1>ようこそ、Discordサーバーへ！</h1>
     </header>
     <main>
-        <p>このサイトは私たちのDiscordサーバーの情報を提供します。</p>
-        <button class="invite-button" onclick="joinServer()">サーバーに参加する</button>
+        <div class="left">
+            <h2>運営の表記</h2>
+            <p>こちらには運営の情報や連絡先を記載してください。</p>
+        </div>
+        <div class="right">
+            <p>このサイトは私たちのDiscordサーバーの情報を提供します。</p>
+            <button class="invite-button" onclick="joinServer()">サーバーに参加する</button>
+            <iframe src="https://discord.com/widget?id=1237740449280819273&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
     </main>
     <script>
         function joinServer() {
