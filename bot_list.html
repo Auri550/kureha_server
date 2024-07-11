@@ -122,7 +122,10 @@
                 <div>
                     <div class="bot-name">wick</div>
                     <div>優秀な荒らし対策BOTです</div>
-                    
+                    <br>
+                    <div class="invite-button" onclick="wick_HP()" style="color: #61dafb;">wick ホームページ</div>
+                    <br>
+                    <div class="invite-button" onclick="wick_invite()" style="color: #61dafb;">wick invite</div>
                 </div>
             </div>
             <h2>レベリングBOT</h2>
@@ -134,7 +137,7 @@
                         <br>
                         <div class="invite-button" onclick="ranking()" style="color: #61dafb;">レベルリーダーボード</div>
                         <br>
-                        <div class="invite-button" onclick="invite()" style="color: #61dafb;">invite</div>
+                        <div class="invite-button" onclick="yuduki_invite()" style="color: #61dafb;">結月 invite</div>
                         <br>
                         <div class="invite-button" onclick="yuduki_HP()" style="color: #61dafb;">ホームページ</div>
                     </div>
@@ -143,13 +146,23 @@
         </div>
     </main>
     <script>
+        function wick_HP(){
+            const wick_HP = "https://wickbot.com";
+            window.open(wick_HP, "_blank")
+        }
+
+        function wick_invite() {
+            const wick_invite = "https://discord.com/oauth2/authorize?response_type=code&scope=bot+identify+guilds+applications.commands&client_id=536991182035746816&redirect_uri=https://dashboard.wickbot.com/api/auth/callback&permissions=8";
+            window.open(wick_invite, "_blank")
+        }
+        
         function ranking(){
             const ranking = "https://yudzuki.lunaproject.jp/leaderboard/1237740449280819273";
             window.open(ranking, "_blank")
         }
 
-        function invite(){
-            const invite = "https://narikakun.net/yudzuki";
+        function yuduki_invite(){
+            const yuduki_invite = "https://narikakun.net/yudzuki";
             window.open(invite, "_blank")
         }
 
