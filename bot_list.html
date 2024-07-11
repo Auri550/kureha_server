@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>紅葉の雑談サーバー</title>
+    <title>BOT一覧</title>
     
     <!-- Open Graph meta tags for Discord link preview -->
     <meta property="og:title" content="紅葉の雑談サーバーの導入BOT">
@@ -86,7 +86,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header onclick="back()">
         <h1>紅葉の雑談サーバー</h1>
     </header>
     <main>
@@ -221,6 +221,8 @@
         function gamebot_invite(){
             const gamebot_invite = "https://discord.com/oauth2/authorize?client_id=1252135017895952414&permissions=8&integration_type=0&scope=bot";
             window.open(gamebot_invite, "_blank")
+        }
+        function back(){
         }
     </script>
 </body>
