@@ -125,7 +125,7 @@
                     <br>
                     <div class="invite-button" onclick="ranking()" style="color: #61dafb;">レベルリーダーボード</div>
                     <br>
-                    <div class="invite-button" href="https://narikakun.net/yudzuki", style="color: #61dafb;">BOTを自鯖に招待する</div>
+                    <div class="invite-button" onclick="invite()" style="color: #61dafb;">BOTを自鯖に招待する</div>
                 </div>
             </div>
         </div>
@@ -134,6 +134,11 @@
         function ranking(){
             const ranking = "https://yudzuki.lunaproject.jp/leaderboard/1237740449280819273";
             window.open(ranking, "_blank")
+        }
+
+        function invite(){
+            const invite = "https://narikakun.net/yudzuki";
+            window.open(invite, "_blank")
         }
     </script>
 </body>
