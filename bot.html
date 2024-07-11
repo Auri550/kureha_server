@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紅葉の雑談サーバー</title>
+    
+    <!-- Open Graph meta tags for Discord link preview -->
+    <meta property="og:title" content="紅葉の雑談サーバー">
+    <meta property="og:description" content="紅葉の雑談サーバーのホームページを適当に作りました">
+    <meta property="og:image" content="image/IMG_2718.webp">
+    <meta property="og:url" content="https://auri550.github.io/kureha_server/main.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="image/IMG_2718.webp" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: #61dafb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: #20232a;
+            padding: 10px; /* Reduced padding to make header smaller */
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 60px; /* Adjusted based on the smaller header height */
+            overflow-y: auto;
+        }
+        .bot-list {
+            display: flex;
+            flex-direction: column;
+        }
+        .bot-item {
+            display: flex;
+            align-items: center;
+            background-color: #20232a;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .bot-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .bot-item div {
+            text-align: left;
+        }
+        .bot-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .invite-button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .invite-button:hover {
+            background-color: #5b6eae;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>紅葉の雑談サーバー</h1>
+    </header>
+    <main>
+        <br>
+        <h2>導入されているBOT一覧</h2>
+        <div class="bot-list">
+            <!-- BOT 1 -->
+            <div class="bot-item">
+                <img src="bot1-image-url.jpg" alt="Bot 1 Picture">
+                <div>
+                    <div class="bot-name">BOT 1</div>
+                    <div>BOT 1の説明がここに入ります。</div>
+                </div>
+            </div>
+            <!-- BOT 2 -->
+            <div class="bot-item">
+                <img src="bot2-image-url.jpg" alt="Bot 2 Picture">
+                <div>
+                    <div class="bot-name">BOT 2</div>
+                    <div>BOT 2の説明がここに入ります。</div>
+                </div>
+            </div>
+            <!-- BOT 3 -->
+            <div class="bot-item">
+                <img src="bot3-image-url.jpg" alt="Bot 3 Picture">
+                <div>
+                    <div class="bot-name">BOT 3</div>
+                    <div>BOT 3の説明がここに入ります。</div>
+                </div>
+            </div>
+            <!-- Add more BOTs as needed -->
+        </div>
+    </main>
+    <script>
+        function joinServer() {
+            const inviteLink = "https://discord.gg/YOUR_INVITE_CODE"; // ここにあなたのDiscord招待リンクを入力
+            window.location.href = inviteLink;
+        }
+    </script>
+</body>
+</html>
