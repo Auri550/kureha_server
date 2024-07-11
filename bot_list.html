@@ -135,7 +135,9 @@
                     <div class="bot-name">protecat</div>
                     <br>
                     <div>こちらも優秀な荒らし対策BOTです</div>
-
+                    <br>
+                    <div class="invite-button" onclick="protecat_HP()" style="color: #61dafb;">protecat ホームページ</div><br>
+                    <div class="invite-button" onclick="protecat_invite()" style="color: #61dafb;">protecat invite</div>
             </div>
             </div>
             <h2>レベリングBOT</h2>
@@ -163,6 +165,16 @@
         function wick_invite() {
             const wick_invite = "https://discord.com/oauth2/authorize?response_type=code&scope=bot+identify+guilds+applications.commands&client_id=536991182035746816&redirect_uri=https://dashboard.wickbot.com/api/auth/callback&permissions=8";
             window.open(wick_invite, "_blank")
+        }
+
+        function protecat_invite(){
+            const protecat_invite = "https://discord.com/api/oauth2/authorize?client_id=1154776436998152242&permissions=8&scope=bot%20applications.commands";
+            window.open(protecat_invite, "_blank")
+        }
+
+        function protecat_HP(){
+            const protecat_HP = "https://protecat.otoneko.jp";
+            window.open(protecat_HP, "_blank")
         }
         
         function ranking(){
