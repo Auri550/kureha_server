@@ -95,6 +95,10 @@
             <h2>サーバーについて</h2>
             <a>サーバーにはオリジナルbotが導入されています<br>サーバーをより活発にするためリクエストは可能な限り対応します(botの機能リクエストは初心者にできる範囲でお願いします)</a>
             <br>
+            <h2>導入BOT一覧</h2>
+            <a>以下のボタンから導入されているBOTを取得できます</a>
+            <button class="invite-button" onclick="bot()">BOTを確認する</button>
+            <br>
             <h2>運営の一覧(放置中)</h2>
             <div class="profile">
                 <img src="image/3b949136e68a67b9a8e5e4ddc1fb1e25.png" alt="Profile Picture">
@@ -115,6 +119,10 @@
         function joinServer() {
             const inviteLink = "https://discord.gg/pFgDAp5cBK"; // ここにあなたのDiscord招待リンクを入力
             window.open(inviteLink, "_blank");
+        }
+        function bot(){
+            const botlink = "bot.html";
+            window.open(botlink, "_blank");
         }
     </script>
 </body>
