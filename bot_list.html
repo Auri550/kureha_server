@@ -172,7 +172,8 @@
                 <div>
                     <div class="bot-name">ゲームBOT</div>
                     <div>サーバー主自作のBOTです(宣伝だよ)</div>
-
+                    <br>
+                    <div class="invite-button" onclick="gamebot_invite()" style="color: #61dafb;">ゲームBOT invite</div>
                 </div>
             </div>
     </main>
@@ -215,6 +216,11 @@
         function miffy_invite(){
             const miffy_invite = "https://discord.com/api/oauth2/authorize?client_id=1130546409913995354&permissions=8&scope=bot%20applications.commands";
             window.open(miffy_invite, "_blank")
+        }
+
+        function gamebot_invite(){
+            const gamebot_invite = "https://discord.com/oauth2/authorize?client_id=1252135017895952414&permissions=8&integration_type=0&scope=bot";
+            window.open(gamebot_invite, "_blank")
         }
     </script>
 </body>
